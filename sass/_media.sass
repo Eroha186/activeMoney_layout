@@ -1,0 +1,343 @@
+@media (min-width: 992px)
+	a
+		position: relative
+		&::before
+			content: ''
+			bottom: 0
+			left: 0
+			position: absolute
+			width: 100%
+			height: 2px
+			background-color: #FFFF00
+			transition: 0.2s;
+			transform: scaleX(0)
+		&:hover:before 
+			transform: scaleX(1) 
+	.button
+		background-image: linear-gradient(to left,transparent,transparent 50%,#ffbb38 50%,#ffbb38)
+		box-shadow: 0 0 13px rgba(0, 0, 0, 0.19)
+		background-position: 100% 0
+		background-size: 200% 100%
+		transition: all .25s ease-in
+		&:hover
+			background-position: 0 0
+	.icon-phone
+		display: none			
+@media (max-width: 1199px)	and (min-width: 992px)
+	.header
+		&-text
+			padding-right: 0
+	.main-form
+		&::before 
+			right: 15px
+	.icon-phone
+		display: none		
+	.about-company
+		&-img
+			&__text
+				margin-left: 0
+				font-size: 16px
+			&__bg
+				&-1
+					&::after
+						width: 215px
+				&-2
+					&::after
+						width: 215px	
+	.features-block
+		padding: 23px 25px 27px 25px
+	.servise
+		&-blocks
+			flex-direction: column 
+			align-items: center
+		&-block
+			margin-bottom: 30px
+			width: 460px	
+	.question 
+		&-form
+			&::before
+				left: 196px
+			&::after
+				right: 432px		
+@media (max-width: 991px)	and (min-width: 768px)
+	.question 
+		&-form
+			&::before
+				left: 71px
+			&::after
+				right: 316px						
+@media (max-width: 991px) and (min-width: 576px)
+	.header
+		&-text
+			display: none 
+		&-button 
+			margin-left: 3%
+	.main
+		&-warp 
+			padding-top: 60px
+			padding-bottom: 0
+			text-align: center
+		&-descr 
+			padding: 0	
+		&-form
+			padding-top: 0
+			padding-bottom: 60px
+			&::before 
+				display: none
+			&__input
+				&-name
+					text-align: center
+					padding: 17px 66px 17px 66px
+				&-tel
+					text-align: center
+					min-width: 301px
+					padding: 17px 66px 17px 55px
+		&-arrow
+			display: none	
+	.icon-phone
+		display: none		
+	.form 
+		&::before 
+			display: none
+		&::after 
+			display: none	
+	.about-company
+		&__text
+			text-align: center
+		&-img
+			&__text
+				margin-bottom: 15px						
+	.skills
+		&-block
+			width: 49%
+			&__text
+				width: 85%
+				&-decor 
+					display: inline
+	.features-blocks
+		flex-direction: column
+		align-items: center
+	.features-block
+		width: 60%
+		margin-bottom: 10px
+		height: 191px
+		&__descr
+			&-decor 
+				display: inline		
+	.reservation
+		&-warp
+			flex-direction: column 
+			align-items: center
+		&-text
+			padding: 0
+			margin: 0
+			margin-bottom: 30px
+	.p-descr
+		font-size: 14px
+	.servise
+		&-blocks
+			flex-direction: column 
+			align-items: center
+		&-block
+			margin-bottom: 30px	
+	.address
+		display: flex
+		flex-direction: column
+		align-items: center
+	.contacts-question__button
+		text-align: center			
+@media (max-width: 768px) and (min-width: 320px)
+	.question 
+		&-form
+			&::before
+				display: none
+			&::after
+				display: none
+@media (max-width: 575px) and (min-width: 320px)
+	.row
+		margin: 0			
+	.section-title
+		font-size: 24px
+		margin-bottom: 17px
+		&::after 
+			margin-top: 10px
+	.skills-section-title__decor
+		display: block
+		margin-top: 3px		
+	.header
+		&-contacts
+			&__text
+				text-align: left
+			&__warp 
+				display: flex
+				justify-content: space-between	
+		&-text
+			display: none
+		&-logo
+			display: none
+	.icon-phone
+		& img	
+			max-width: 17px
+			max-height: 17px
+	.button-text 
+		display: none
+	.header-button
+		margin-left: 0
+		width: 45px
+		height: 45px
+		border-radius: 50%
+		padding: 14px 14px
+	.main
+		&-warp
+			display: flex
+			flex-direction: column
+			align-items: center
+			padding-top: 26px
+			padding-bottom: 0
+		&-title
+			font-size: 29px
+			text-align: center
+		&-subtitle 
+			text-align: center
+			font-size: 22px
+		&-descr 
+			padding: 0
+			text-align: center
+			font-size: 15px
+			margin-bottom: 15px
+		&-button
+			padding: 15px 31px
+			font-size: 15px
+		&-arrow
+			display: none	
+		&-form
+			padding-top: 0
+			padding-bottom: 20px
+			&::before 
+				display: none	
+			&__subtitle
+				margin-bottom: 13px
+			&__input
+				&-name
+					text-align: center
+					padding: 16px 61px 18px 60px
+				&-tel
+					text-align: center		
+					padding: 17px 61px 17px 60px	
+					margin-bottom: 15px					
+	.form 
+		&::before 
+			display: none
+		&::after 
+			display: none
+	.text-decor
+		font-family: Proxima Nova Regular
+		font-weight: 400
+		&__add
+			display: block
+	.about-company
+		padding-top: 25px
+		padding-bottom: 0
+		&__text
+			text-align: center
+			font-family: Proxima Nova Regular
+			font-weight: 400	
+			color: $dark-text-color
+		&-img
+			&__bg
+				&-1
+					display: none
+				&-2
+					display: none
+			&__text
+				display: none
+	.skills
+		&-button
+			padding: 22px 18px
+		&-block
+			margin-bottom: 30px
+			width: 100%
+			&__text
+				width: 70%
+				&-decor 
+					display: inline	
+		&-text
+			margin-top: 0
+			color: $dark-text-color		
+			font-family: Proxima Nova Regular
+			font-weight: 400	
+			&__add
+				margin-bottom: 15px
+	.features
+		padding-top: 60px
+		padding-bottom: 50px
+		&-text
+			font-size: 16px
+		&-blocks
+			flex-direction: column
+			align-items: center
+		&-block
+			width: 90.629%
+			margin-bottom: 10px
+			height: 191px
+			padding: 23px 40px 27px 40px
+			&__descr
+				&-decor 
+					display: inline
+	.reservation
+		padding-top: 45px
+		padding-bottom: 60px
+		&-warp
+			flex-direction: column 
+			align-items: center
+		&-text
+			text-align: center
+			padding: 0
+			margin: 0
+			margin-bottom: 30px
+			&__title
+				font-size: 24px
+			&__subtitle 
+				font-size: 15px
+	.feedback 
+		padding-top: 50px
+		padding-bottom: 50px			
+	.slider 
+		margin-top: 0
+		&-arrow	
+			&_left
+				left: -28px
+			&_right
+				right: -28px	
+	.p-descr
+		font-size: 12px			
+	.popup	
+		&-form
+			&::before 
+				display: none
+		&-close 
+			right: 230px
+    	top: -45px		
+	.servise
+		&-blocks
+			flex-direction: column 
+			align-items: center
+		&-block
+			margin-bottom: 20px	 
+			& img 
+				width: 250px
+			&__decor 
+				display: inline
+			&__subtitle 
+				width: 250px
+				font-size: 14px
+			&__title 
+				font-size: 19px	
+	.address
+		display: flex
+		flex-direction: column
+		align-items: center
+	.contacts-question__button
+		text-align: center	
+	.footer-text
+		font-size: 12px		

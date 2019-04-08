@@ -1,0 +1,71 @@
+.question
+	background: url(../img/question/question-bg.png) center no-repeat
+	background-size: cover
+	padding-top: 74px
+	padding-bottom: 82px
+	&-title
+		margin: 0
+		margin-bottom: 37px
+		text-align: center
+		font-family: Proxima Nova Semibold
+		font-size: 26px
+		font-weight: 400
+		text-transform: uppercase
+		color: $light-text-color
+		&::after
+			content: ''
+			display: block
+			text-align: center
+			margin-top: 17px
+			height: 1px
+			background: url(../img/question/title-decor.png) center no-repeat
+	&-subtitle 
+		margin-top: -27px
+		margin-bottom: 15px
+		text-align: center
+		font-family: Proxima Nova Light
+		font-size: 18px
+		font-weight: 300
+		color: $light-text-color
+	&-button 
+		margin-top: -7px
+		text-align: center	
+		&-form
+			font-family: Proxima Nova Bold
+			font-size: 15px
+			font-weight: 700
+			line-height: 25.47px
+			padding-left: 38px
+			padding-right: 38px
+	&-form
+		text-align: center
+		position: relative
+		&__input 
+			margin-left: 5px
+			margin-right: 5px
+			&-name
+				padding: 16px 97px 16px 53px
+				border-radius: 35px					
+			&-tel 
+				margin-top: 15px
+				margin-bottom: 26px
+				padding: 17px 100px 17px 49px
+				border-radius: 35px		
+		&::before
+			content: ''
+			position: absolute
+			background: url(../img/form-icon/form-user-icon.png) center no-repeat
+			width: 20px
+			height: 21px
+			top: 30px
+			left: 285px
+			z-index: 3	
+		&::after
+			content: ''
+			position: absolute
+			background: url(../img/form-icon/form-phone-icon.png) center no-repeat
+			width: 20px
+			height: 21px
+			top: 31px
+			right: 527px
+			z-index: 3						

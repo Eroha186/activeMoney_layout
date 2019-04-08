@@ -1,0 +1,142 @@
+.header
+	padding-top: 4.9%
+	&-text
+		vertical-align: middle
+		display: block
+		padding-left: 5.05%
+		padding-right: 24.3%
+		font-family: Proxima Nova Regular
+		color: $light-text-color
+		font-size: 16px
+		font-weight: 400
+	&-contacts
+		vertical-align: middle
+		display: inline-block	
+		padding-left: 3.35%	
+		&__text
+			display: block
+			text-align: right
+			font-family: Proxima Nova Light
+			font-size: 14px
+			font-weight: 300
+			color: $light-text-color
+		&__phone
+			font-size: 19px
+			font-family: Proxima Nova Bold
+			font-weight: 700	
+			color: $light-text-color
+			&-space
+				letter-spacing: 4px		
+	&-button
+		display: inline-block	
+		margin-left: 6.41%	
+.main 
+	background: url(../img/main-screen/bg-main.jpg) center no-repeat 
+	background-size: cover
+	z-index: 0
+	position: relative
+	&-arrow
+		position: absolute
+		width: 21px
+		height: 12px
+		bottom: 34px 
+		margin-left: -10px
+		left: 50%
+		cursor: pointer
+		&:hover:before 
+			transform: scaleX(0)
+	&-warp 
+		padding-top: 130px
+		padding-bottom: 220px
+	&-title
+		margin-top: 0
+		margin-bottom: 3px
+		font-family: Proxima Nova Bold
+		font-size: 48px
+		font-weight: 700
+		color: $light-text-color
+	&-subtitle
+		margin-bottom: 13px
+		font-family: Proxima Nova Regular
+		font-size: 24px
+		font-weight: 400	
+		color: $light-text-color
+	&-descr
+		padding-right: 80px
+		margin-bottom: 32px
+		font-family: Proxima Nova Light
+		font-size: 18px
+		font-weight: 300
+		color: $light-text-color
+	&-button
+		padding: 21px 37px
+		font-size: 16px
+		font-weight: 700
+	&-form
+		padding-top: 87px	
+		text-align: center
+		position: relative
+		&::before
+			content: ''
+			position: absolute
+			right: 0px
+			background: url(../img/main-screen/border.png) center no-repeat
+			height: 309px
+			width: 360px
+			z-index: -1
+		&__title  
+			margin-top: 35px
+			margin-bottom: 9px
+			font-family: Proxima Nova Bold
+			font-size: 22px
+			font-weight: 700
+			text-transform: uppercase
+			color: $light-text-color
+		&__subtitle 
+			margin-bottom: 27px
+			font-family: Proxima Nova Regular
+			font-size: 16px
+			font-weight: 400
+			color: $light-text-color
+			&-ad
+				display: block
+		&__input
+			display: block		
+			margin: 0 auto
+			&-name
+				padding: 16px 88px 18px 62px
+				border-radius: 35px					
+			&-tel 
+				margin-top: 15px
+				margin-bottom: 26px
+				padding: 17px 89px 17px 61px
+				border-radius: 35px	
+		&__button
+			padding: 18px 30px	
+			font-size: 15px
+			font-weight: 700
+.form 
+	&::before
+		content: ''
+		position: absolute
+		background: url(../img/form-icon/form-user-icon.png) center no-repeat
+		width: 20px
+		height: 21px
+		top: 236px
+		right: 292px
+		z-index: 1	
+	&::after
+		content: ''
+		position: absolute
+		background: url(../img/form-icon/form-phone-icon.png) center no-repeat
+		width: 20px
+		height: 21px
+		top: 304px
+		right: 292px
+		z-index: 1		
+input
+	color: #606060
+	font-family: Proxima Nova regular
+	font-size: 14px
+	font-weight: 400
+
